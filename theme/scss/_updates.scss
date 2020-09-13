@@ -1,0 +1,100 @@
+.updates {
+    background-color: $light-gray;
+    position: relative;
+
+    &:before {
+        content: '';
+        background: url('../images/bg-gray-wave-top.png') no-repeat;
+        height: 200px;
+        width: 100%;
+        top: -25%;
+        display: block;
+        background-size: 100%;
+        position: absolute;
+        z-index: 0;
+    }
+
+    &:after {
+        content: '';
+        background: url('../images/bg-gray-wave-bottom.png') no-repeat;
+        background-position: bottom;
+        height: 200px;
+        width: 100%;
+        bottom: -25%;
+        display: block;
+        background-size: 100%;
+        position: absolute;
+        z-index: 0;
+    }
+
+    .container {
+        position: relative;
+        z-index: 1;
+    }
+
+    .title {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .subtitle {
+        margin: 0;
+        text-align: center;
+    }
+
+    .event-list {
+        margin-top: 70px;
+        display: flex;
+        justify-content: space-between;
+
+        .event-item {
+            width: percentage(265px/1200px);
+            position: relative;
+
+            img {
+                display: block;
+                width: 100%;
+            }
+
+            .date {
+                background: $purple;
+                color: $white;
+                font-size: 1.5em;
+                position: absolute;
+                right: 0;
+                top: 20px;
+                padding: 15px 20px;
+                margin: 0;
+            }
+
+            .event-title {
+                font-size: 1.125em;
+            }
+
+            .read-more {
+                display: block;
+                font-size: 0.875em;
+                color: $gray;
+            }
+        }
+    }
+
+    .mesh {
+        position: absolute;
+        top: 49%;
+        z-index: 2;
+
+        right: 0;
+
+        .assets {
+            position: relative;
+            display: flex;
+
+            img:first-child {
+                position: absolute;
+                right: 0;
+                top: -47%;
+            }
+        }
+    }
+}

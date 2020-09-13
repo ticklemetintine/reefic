@@ -1,0 +1,57 @@
+.splash-banner {
+    position: relative;
+    overflow: hidden;
+
+    .content {
+        background-color: rgba(77, 19, 81, 0.57);
+        color: $white;
+        text-align: center;
+        position: relative;
+        z-index: 1;
+        padding: 230px 0;
+
+        .container {
+            >p {
+                width: percentage(980px/1200px);
+                font-size: 1.5em;
+                margin: auto;
+                line-height: 1.5;
+
+            }
+
+            .timer-heading {
+                font-size: 3.750em;
+                margin: 90px auto 45px;
+            }
+        }
+
+        h1 {
+            font-size: 3em;
+            margin: 0 0 45px;
+        }
+    }
+
+    .slider {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: 0;
+
+        .slick-list {
+            height: 100% !important;
+        }
+
+        .slick-track {
+            display: flex;
+            height: 100%;
+        }
+
+        .slide {
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+    }
+}

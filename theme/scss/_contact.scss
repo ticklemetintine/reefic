@@ -1,0 +1,72 @@
+.contact {
+    background: url('../images/bg-contact.png') no-repeat left top $dark-violet;
+    padding: 40px 0 70px;
+    text-align: center;
+
+    .title,
+    p,
+    a {
+        color: $white;
+    }
+
+    i {
+        color: $light-violet;
+    }
+
+    form {
+        width: percentage(750px/1200px);
+        margin: 40px auto;
+
+        input,
+        textarea {
+            display: block;
+            width: 100%;
+            border: none;
+            border-radius: 5px;
+            padding: 20px 30px;
+            font-family: $roboto;
+            font-size: 1.125em;
+            font-weight: $light;
+            margin-bottom: 15px;
+            outline: none;
+        }
+
+        input {
+            height: 45px;
+            width: 48%;
+        }
+
+        .row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+
+    .writeup {
+        font-size: 1.5em;
+        font-family: $roboto;
+        font-weight: $light;
+    }
+
+    .contact-details {
+        display: flex;
+        justify-content: space-around;
+
+        p {
+            font-size: 1.5em;
+
+            a {
+                display: flex;
+                align-items: center;
+                font-family: $roboto;
+                font-weight: $light;
+
+                i {
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+
+}

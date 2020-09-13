@@ -1,0 +1,49 @@
+.protocol {
+    text-align: center;
+    background: url('../images/bg-teal-wave.png') no-repeat;
+    background-size: cover;
+    padding: 100px 0 150px;
+    margin-top: -180px;
+    position: relative;
+    z-index: 1;
+
+    &:after {
+        content: '';
+        background: url('../images/bg-protocol.png') no-repeat;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        bottom: 0;
+        left: 0;
+        background-size: cover;
+        z-index: 0;
+    }
+
+    .container {
+        width: percentage(860px/1920px);
+        position: relative;
+        z-index: 1;
+    }
+
+    .video-container {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        margin: auto;
+        padding-top: 56.25%;
+
+        iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .btn-group {
+        margin-top: 0;
+    }
+}

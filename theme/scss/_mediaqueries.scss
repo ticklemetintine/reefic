@@ -1,0 +1,460 @@
+@media (max-width: $screen-xl) {
+    body {
+        font-size: 14px;
+    }
+
+    header,
+    footer,
+    .splash-banner,
+    .cast {
+        .container {
+            width: 100%;
+        }
+    }
+
+    .press-release {
+        padding-top: 40px;
+
+        .container {
+            width: 80%;
+        }
+
+        .mesh {
+            top: unset;
+
+            .assets {
+                width: 70%;
+
+                img {
+                    max-width: 100%;
+
+                    &:first-child {
+                        top: -20%;
+                        width: 60%;
+                    }
+                }
+            }
+        }
+    }
+
+    .updates {
+        .mesh {
+            top: 0;
+            z-index: 0;
+
+            .assets {
+                margin: auto 0 auto auto;
+                width: 70%;
+
+                img {
+                    max-width: 100%;
+
+                    &:first-child {
+                        top: -33%;
+                        width: 60%;
+                    }
+                }
+            }
+        }
+
+        .event-list {
+            position: relative;
+            z-index: 3;
+        }
+    }
+
+    .ecosystem {
+        .writeup {
+            width: 40%;
+        }
+
+        .illustration {
+            width: 56%;
+        }
+
+        .mesh {
+            top: 60%;
+
+            .assets {
+                width: 70%;
+
+                img {
+                    max-width: 100%;
+
+                    &:first-child {
+                        width: 40%;
+                        top: -33%;
+                    }
+                }
+            }
+        }
+    }
+
+    .token-event {
+        &:before {
+            width: 15%;
+            background-position: right top;
+        }
+
+        &:after {
+            width: 15%;
+            background-position: left center;
+        }
+    }
+}
+
+@media (max-width: $screen-lg) {
+    .container {
+        max-width: 90%;
+    }
+
+    header {
+        .container {
+            flex-wrap: wrap;
+
+            nav {
+                background: $violet;
+                flex-direction: column;
+                width: 100%;
+                height: 0;
+                overflow: hidden;
+                transition: height 0.5s ease;
+
+                &.show {
+                    min-height: 100px;
+                    margin-top: 30px;
+                    height: 400px;
+                }
+
+                .nav-item {
+                    border-bottom: 1px solid $purple;
+                    width: 100%;
+                    text-align: center;
+                    padding: 10px;
+                }
+            }
+
+            .logo {
+                width: 180px;
+            }
+
+            .toggle-menu {
+                display: block;
+            }
+        }
+    }
+
+    .protocol {
+        padding: 200px 0 100px;
+
+        .container {
+            width: 70%;
+        }
+    }
+
+    .updates {
+        padding: 40px 0;
+
+        &:before {
+            top: -8%;
+        }
+
+        &:after {
+            bottom: -8%;
+        }
+
+        .event-list {
+            flex-wrap: wrap;
+
+            .event-item {
+                width: 48%;
+                margin-bottom: 40px;
+            }
+        }
+    }
+
+    .ecosystem {
+        padding: 180px 0 40px;
+
+        .container {
+            flex-direction: column-reverse;
+
+            .writeup,
+            .illustration {
+                width: 100%;
+            }
+
+            .writeup {
+                margin-top: 60px;
+                width: 70%;
+                align-self: flex-end;
+            }
+        }
+
+        .mesh {
+            top: 40%;
+
+            .assets {
+                width: 70%;
+            }
+        }
+    }
+
+    .token-event {
+        padding-top: 180px;
+        background-position: center;
+
+        .table,
+        .stages,
+        .cta {
+            width: 100%;
+            position: relative;
+            z-index: 2;
+        }
+
+        .charts {
+            padding-bottom: 40px;
+        }
+
+        .title {
+            font-size: 3em;
+        }
+
+        .btn-group {
+            margin-top: 20px;
+        }
+    }
+
+    .sticky-social a {
+        font-size: 2em;
+    }
+
+    .implementation {
+        .container {
+            width: 100%;
+        }
+    }
+
+    .cast {
+        .cast-list {
+            flex-wrap: wrap;
+            justify-content: space-around;
+
+            .item {
+                width: 30%;
+            }
+
+        }
+    }
+
+    .contact {
+        form {
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width: $screen-md) {
+    .splash-banner {
+        .content {
+            padding: 120px 0;
+
+            .container {
+
+                timer-heading,
+                h1 {
+                    font-size: 2.5em;
+                }
+            }
+        }
+    }
+
+    .press-release,
+    .updates,
+    .ecosystem {
+        .mesh {
+            display: none;
+        }
+    }
+
+    .ecosystem {
+        .container {
+            .writeup {
+                width: 100%;
+            }
+        }
+    }
+
+    .token-event {
+        .container {
+            width: 90%;
+        }
+
+        .sub {
+            width: 100%;
+        }
+
+        .charts {
+            flex-direction: column;
+
+            .chart {
+                width: 100%;
+                margin-bottom: 40px;
+            }
+        }
+    }
+
+    .cta-section,
+    .contact {
+        .container {
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width: $screen-sm) {
+    body {
+        font-size: 12px;
+    }
+
+    .timer {
+        .time {
+            width: 100px;
+        }
+    }
+
+    .splash-banner {
+        .content {
+            padding: 150px 0;
+
+            .container {
+                .timer-heading {
+                    font-size: 2em;
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    .updates {
+        &:before {
+            top: -5%;
+        }
+
+        &:after {
+            bottom: -5%;
+        }
+
+        .container {
+            width: 100%;
+        }
+    }
+
+    .press-release {
+        .slider {
+            padding-top: 0;
+
+            .slick-arrow {
+                &.slick-next {
+                    right: -20px;
+                }
+
+                &.slick-prev {
+                    left: -20px;
+                }
+            }
+        }
+    }
+
+    .ecosystem {
+        padding-top: 150px;
+
+        .container {
+            width: 90%
+        }
+    }
+
+    .token-event {
+        .stages {
+            flex-direction: column;
+            align-items: center;
+
+            .stage {
+                width: 80%;
+                margin-bottom: 40px;
+            }
+        }
+
+        .cta {
+            flex-direction: column;
+
+            p {
+                text-align: center;
+                margin-bottom: 40px;
+            }
+        }
+    }
+
+    .cast {
+        .cast-list {
+            .item {
+                width: 47%;
+            }
+        }
+    }
+
+    .implementation {
+        padding-bottom: 120px;
+
+        .slider {
+            padding-left: 20px;
+
+            .slick-arrow {
+                font-size: 1em;
+                width: 40px;
+                height: 40px;
+                left: 0;
+            }
+        }
+    }
+
+    .contact {
+        form {
+            .row {
+                flex-direction: column;
+
+                input {
+                    width: 100%;
+                }
+            }
+
+            .form-footer {
+                .g-recaptcha {
+                    margin-bottom: 20px;
+                }
+            }
+        }
+
+        .contact-details {
+            flex-direction: column;
+
+            p {
+                margin-bottom: 0;
+
+                a {
+                    justify-content: center;
+                }
+            }
+        }
+    }
+
+    .btn-group {
+        flex-direction: column;
+
+        .btn {
+            margin-bottom: 20px;
+        }
+    }
+}
+
+@media (max-width: $screen-xs) {}

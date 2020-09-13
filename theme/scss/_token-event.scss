@@ -1,0 +1,235 @@
+.token-event {
+    background: url('../images/token-generation-bg.png') no-repeat;
+    background-size: cover;
+    padding: 100px 0 300px;
+    position: relative;
+
+    &:before {
+        content: '';
+        background: url('../images/mesh4.png') no-repeat;
+        background-size: contain;
+        position: absolute;
+        width: 275px;
+        height: 100%;
+        z-index: 1;
+        right: 0;
+        background-position: right center;
+    }
+
+    &:after {
+        content: '';
+        background: url('../images/mesh5.png') no-repeat;
+        background-size: contain;
+        position: absolute;
+        width: 275px;
+        height: 100%;
+        z-index: 1;
+        left: 0;
+        bottom: 0;
+        background-position: left center;
+    }
+
+    .container {
+        width: percentage(1450px/1920px);
+        max-width: 100%;
+    }
+
+    .title {
+        text-align: center;
+        font-size: 3.750em;
+        margin-bottom: 20px;
+    }
+
+    .sub {
+        font-family: $roboto;
+        font-size: 1.5em;
+        text-align: center;
+        color: $gray;
+        width: percentage(680px/1200px);
+        margin: 40px auto;
+    }
+
+    .timer {
+        color: $violet;
+        text-align: center;
+    }
+
+    .table {
+        width: percentage(920px/1200px);
+        margin: auto;
+
+        .row {
+            display: flex;
+            justify-content: space-between;
+            padding: 0 20px;
+
+            &:nth-child(odd) {
+                background: $light-gray;
+            }
+
+            &:nth-child(even) {
+                background: $white;
+            }
+
+            p {
+                font-family: $roboto;
+                color: $gray;
+            }
+
+            .label {
+                font-weight: $bold;
+            }
+        }
+    }
+
+    .stages {
+        width: percentage(920px/1200px);
+        margin: 70px auto;
+        display: flex;
+        justify-content: space-between;
+
+        .stage {
+            color: $white;
+            background: $violet;
+            width: percentage(295px/920px);
+            border-radius: 10px;
+            text-align: center;
+            padding-bottom: 15px;
+
+            p {
+                font-size: 1.5em;
+                margin: 0;
+            }
+
+            .stage-title {
+                padding: 20px;
+            }
+
+            .details {
+                background: $purple;
+                padding: 10px;
+                margin: 0;
+                border-bottom: solid 2px $violet;
+                font-family: $roboto;
+                font-weight: $light;
+
+                span {
+                    display: block;
+                    font-weight: $bold;
+                    font-family: $roboto;
+                }
+            }
+        }
+
+
+    }
+
+    .cta {
+        width: percentage(920px/1200px);
+        display: flex;
+        justify-content: space-around;
+        margin: auto;
+        align-items: center;
+
+        p {
+            margin: 0;
+            color: $violet;
+            font-family: $roboto;
+            font-weight: $bold;
+            font-size: 1.5em;
+        }
+    }
+
+    .charts {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 40px;
+        padding-bottom: 180px;
+
+        .chart {
+            width: 48%;
+
+            .title {
+                font-size: 2.250em;
+                margin-bottom: 40px;
+            }
+
+            .values {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                img,
+                .legends {
+                    width: 48%;
+                }
+
+                .legend {
+                    font-family: $roboto;
+                    color: $gray;
+                    font-weight: $light;
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 20px;
+                    line-height: 1.5;
+
+                    &:before {
+                        content: '';
+                        width: 10px;
+                        height: 10px;
+                        margin-right: 10px;
+                        top: 10px;
+                    }
+
+                    &.navy {
+                        &:before {
+                            background-color: $navy;
+                        }
+                    }
+
+                    &.green {
+                        &:before {
+                            background-color: $green;
+                        }
+                    }
+
+                    &.purple {
+                        &:before {
+                            background-color: $purple;
+                        }
+                    }
+
+                    &.dark-violet {
+                        &:before {
+                            background-color: $dark-violet;
+                        }
+                    }
+
+                    &.pink {
+                        &:before {
+                            background-color: $pink;
+                        }
+                    }
+
+                    &.yellow {
+                        &:before {
+                            background-color: $yellow;
+                        }
+                    }
+
+                    &.blue {
+                        &:before {
+                            background-color: $blue;
+                        }
+                    }
+
+                    &.teal {
+                        &:before {
+                            background-color: $teal;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

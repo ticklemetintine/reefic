@@ -1,0 +1,117 @@
+.implementation {
+    background: url('../images/bg-implementation.png') no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 150px 0 200px;
+    margin-top: -250px;
+    position: relative;
+    z-index: 1;
+
+    .title {
+        text-align: center;
+    }
+
+    .slider {
+        padding: 20px 0 0 150px;
+        position: relative;
+        height: 500px;
+
+        .slick-list {
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            height: 100% !important;
+        }
+
+        .slick-arrow {
+            position: absolute;
+            left: 0;
+            font-size: 2em;
+            background: $violet;
+            width: 60px;
+            height: 60px;
+            color: $white;
+            line-height: 1;
+            text-align: center;
+            display: flex;
+            border-radius: 70px;
+            align-items: center;
+            justify-content: center;
+            left: 50px;
+            z-index: 1;
+
+            &.slick-next {
+                bottom: 0;
+            }
+        }
+
+        .slick-dots {
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            left: 70px;
+            height: 75%;
+            top: 9%;
+            background: url('../images/seek.png') no-repeat;
+            background-position: center center;
+            padding: 0;
+
+            li {
+                list-style-type: none;
+
+                &.slick-active {
+                    button {
+                        background: $green;
+                    }
+                }
+
+                button {
+                    font-size: 0;
+                    width: 20px;
+                    height: 20px;
+                    border-radius: 20px;
+                    border: none;
+                    background: $gray;
+                    transition: background 0.5s ease;
+                }
+            }
+        }
+
+        .slide {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 40px;
+            background: $light-gray2;
+            padding: 20px 10px;
+            justify-content: space-around;
+
+            &.slick-active {
+                background: $green;
+            }
+        }
+
+        .quarter {
+            font-weight: $bold;
+            font-size: 2.250em;
+            text-transform: uppercase;
+            text-align: center;
+            width: 70px;
+            margin: 0;
+
+            span {
+                display: block;
+                font-size: 0.500em;
+            }
+        }
+
+        .desc {
+            width: calc(100% - 120px);
+            padding-right: 20px;
+
+            p {
+                margin-top: 0;
+            }
+        }
+    }
+}

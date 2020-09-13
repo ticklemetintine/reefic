@@ -1,0 +1,57 @@
+.ecosystem {
+    padding: 250px 0 100px;
+    position: relative;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: percentage(1300px/1920px);
+        max-width: 100%;
+    }
+
+    .writeup {
+        width: percentage(360px/1200px);
+
+        p:not(.title) {
+            font-family: $roboto;
+            color: $gray;
+            font-size: 1.250em;
+        }
+    }
+
+    .illustration {
+        width: calc(100% - 500px);
+
+        img {
+            display: block;
+            width: 100%;
+        }
+    }
+
+    .btn-group {
+        justify-content: flex-start;
+
+        .btn {
+            margin: 0;
+        }
+    }
+
+    .mesh {
+        position: absolute;
+        top: 45%;
+        z-index: 2;
+        left: 0;
+
+        .assets {
+            position: relative;
+            display: flex;
+
+            img:first-child {
+                position: absolute;
+                left: 0;
+                top: -47%;
+            }
+        }
+    }
+}
